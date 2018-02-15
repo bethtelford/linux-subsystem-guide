@@ -17,17 +17,11 @@ Follow [these](https://docs.microsoft.com/en-us/windows/wsl/install-win10#for-an
 2) Enter the command `sudo vim /etc/passwd` <br/>
 Find your account's line, which might look like:
 `beth:x:1000:1000:,,,:/home/beth:/bin/bash`
-3) Open your file explorer, navigate to `C:\Users\` and find what your home directory is called. This is usually similar to the username you use to log into Windows. For example, mine is "mrsbe"
-<p align="center">
-  <img src="file-explorer.png" />
-</p>
-4) Change the home directory that we found in vim, which above is `/home/beth`, to the new directory, using WSL notation. It should look like 
-```YOUR_LINUX_USERNAME:x:1000:1000:,,,:/mnt/c/Users/YOUR_HOME_DIRECTORY:/bin/bash```
+3) Open your file explorer, navigate to `C:\Users\` and find what your home directory is called. This is usually similar to the username you use to log into Windows. For example, mine is "mrsbe" <p align="center"><img src="file-explorer.png" /></p>
+4) Change the home directory that we found in vim, which above is `/home/beth`, to the new directory, using WSL notation. It should look like <code>YOUR_LINUX_USERNAME:x:1000:1000:,,,:/mnt/c/Users/YOUR_HOME_DIRECTORY:/bin/bash</code>
 5) Save the file
-6) Exit bash and re-launch it
-7) To test, use the commands: <br/>
-`cd ~` <br/>
-`pwd`
+6) Exit Ubuntu and re-launch it
+7) To test, use the commands: `cd ~` and `pwd`
 
 ## Updating Bash
 Open Ubuntu, clone this repo, and run install.sh
