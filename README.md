@@ -1,5 +1,5 @@
 # Welcome to the Linux Subsystem!
-In 
+In this guide I will walk you through setting up the Linux Subsystem for Windows 10, changing your Linux system to use the same home directory as your Windows system, and setting up your shiny new Bash terminal to use it for development.
 
 ## Preparing Your Computer
 We need to check your version of Windows
@@ -29,4 +29,5 @@ Open Ubuntu, clone this repo, and run install.sh
 $ git clone https://github.com/bethtelford/linux-subsystem-guide.git ~/.dotfiles
 $ sudo ~/.dotfiles/install.sh
 ```
-
+## Setting your VSCode integrated terminal
+This part is super easy. Open VSCode, hit ` CTRL + SHIFT + P`. For the "terminal.integrated.shell.windows" key, set the value to "bash.exe"
