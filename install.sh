@@ -26,3 +26,5 @@ echo "file=\$1" >> ~/.bashrc
 echo "fi" >> ~/.bashrc
 echo "cmd.exe /C start "\${file}"}" >> ~/.bashrc
 echo "✔ open command configured"
+
+echo "✔ setup complete. enjoy your shiny new bash terminal"
