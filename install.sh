@@ -1,6 +1,6 @@
 echo "apt update..."
 sudo apt -qq update
-echo "✔ linux update done!"
+echo "✔ linux update complete!"
 
 sudo apt -qq install git
 echo "✔ git installed"
