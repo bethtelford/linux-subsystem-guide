@@ -37,12 +37,15 @@ Find your account's line, which might look like:
 Run the following block of code to add all the basic packages you use in your code. This will take a while, so get comfy
 ```
 sudo apt -qq install git
-sudo apt -qq install nodejs
+sudo apt -qq install nodejs-legacy
 sudo apt -qq install npm
+sudo npm i n -g 
+sudo n latest
+sudo npm i npm@latest -g
 sudo apt -qq install python-pip
-sudo npm install -g create-react-app nodemon live-server
+sudo npm i -g create-react-app nodemon live-server
 ```
-Now run the next block of code to be able to use the 'open' command.
+Close Ubuntu and restart it. Now run the next block of code to be able to use the 'open' command.
 ```
 echo "open() {" >> ~/.bashrc
 echo "last=\${1: -1}" >> ~/.bashrc
@@ -56,4 +59,4 @@ echo "cmd.exe /C start \"\${file}\"" >> ~/.bashrc
 echo "}" >> ~/.bashrc
 ```
 ## Setting your VSCode integrated terminal
-This part is super easy. Open VSCode, hit ` CTRL + SHIFT + P`. For the "terminal.integrated.shell.windows" key, set the value to "bash.exe"
+This part is super easy. Open VSCode, hit ` CTRL + SHIFT + P` and select 'Preferences: Open User Settings'. For the "terminal.integrated.shell.windows" key, set the value to "bash.exe"
