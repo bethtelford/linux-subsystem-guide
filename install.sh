@@ -1,12 +1,5 @@
-echo "apt update..."
-sudo apt -qq update
-echo "✔ linux update complete!"
-
 sudo apt -qq install git
 echo "✔ git installed"
-
-git pull
-echo "✔ setup repo is up to date"
 
 sudo apt -qq install nodejs
 sudo apt -qq install npm
