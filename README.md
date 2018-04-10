@@ -37,7 +37,7 @@ Find your account's line, which might look like:
 Run the following block of code to add all the basic packages you use in your code. This will take a while, so get comfy
 ```
 sudo apt -qq install git
-sudo apt -qq install nodejs-legacy
+sudo apt -qq install nodejs
 sudo apt -qq install npm
 sudo npm i n -g 
 sudo n latest
